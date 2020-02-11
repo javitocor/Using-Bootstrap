@@ -46,3 +46,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.nav-top {
+	height: 95px;
+}
+
+ .middle-top a svg{
+	background-color: #f72210;
+	fill:white;
+	margin: 10px 0px;
+	height: 58px;
+}
+
+.middle-top,
+.left-top,
+.right-top{
+	background-color: #f72210;
+}
+
+.subs-button {
+	color: #f72210;
+	padding: 2px 12px;
+}
+
+.fa-bars {
+	display: none;
+}
