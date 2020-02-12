@@ -223,8 +223,37 @@ body {
 	background-color: #da1c0b;
 }
 
-.newsletter-section div img {
-	height: 100%;
-	width: 50%;
+.second-pic {
+	top: 20px;
+	left: 70px;
+	z-index:2;
 }
 
+footer {
+	padding: 20px 0;
+}
+
+.footer-left a svg{
+	background-color: white;
+	fill:#f72210;
+	margin: 10px 0px;
+	height: 35px;
+}
+
+.footer-left p {
+	margin-top: 30px;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.footer-bottom a {
+	font-size: 14px;
+}
+
+strong {
+	font-size: 14px;
+}
+
+.editions ul {
+	margin: 0;
+}
