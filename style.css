@@ -85,3 +85,146 @@ body {
 	font-size: 19px;
 }
 
+.label {
+	bottom: 0;
+	color: #f72210;
+	padding: 5px 4px; 
+}
+
+.opinion-text p  {
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.opinion-text p a:hover {
+	color: #f72210 !important;
+}
+
+.opinion-text span {
+	font-size: 11px;
+}
+
+.latest-news div p a:hover {
+	color: #f72210 !important;
+}
+
+.latest-article a img {
+	height: 100%;
+	width: 100%;
+}
+
+.signup div p a {
+	font-size: 12px;
+}
+
+.magazine-pic div a:hover {
+	color: #f72210 !important;
+}
+
+.magazine-aside p {
+	padding: 4px;
+}
+.magazine-aside p:hover {
+	background-color: darkgray;
+}
+
+.magazine-article .card-title {
+	color: white;
+	background-color: #f72210;
+	padding: 1px 3px;
+	text-align: center;
+}
+
+.magazine-article .card-body span a {
+	color: #f72210;
+	background-color: white;
+	padding: 1px 3px;
+	text-decoration: none;
+}
+
+.magazine-article .card-text a:hover {
+	text-decoration: underline #f72210;
+}
+
+.editors-card .card a:hover {
+	text-decoration: none;
+	color: #f72210;
+}
+
+.editors-card h4 a:hover {
+	text-decoration: underline #f72210;
+}
+
+.slideshows-cards h4 a:hover {
+	text-decoration: underline #f72210;
+}
+
+.slideshows-cards .card div a {
+	background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+	padding:15px;
+	text-align: center;
+	width: 70px;
+    height: 52px;
+	display: block;
+	font-size: 20px;
+}
+
+.slideshows-cards .card div a:hover {
+	text-decoration: none;
+	color: #f72210;
+}
+
+.slideshows-cards h4 {
+	font-size: 22px;
+}
+
+.us-section h3 a {
+	color: #f72210;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.us-cards h4 a:hover {
+	text-decoration: underline #f72210;
+}
+
+.us-cards h4 a {
+	font-size: 22px;
+	line-height: 0;
+}
+
+.us-cards a img {
+	width: 100%;
+}
+
+.us-article h5 a:hover {
+	color: #f72210 !important;
+}
+
+.row .col-5 h5,
+.row .col-7 h5 {
+	color: #f72210;
+	font-size: 16px;
+}
+
+.subscribe-section {
+	padding: 23px;
+	background-color: lightgray;
+}
+
+.subscribe-section button,
+.newsletter-section button {
+	background-color: #f72210;
+	outline: none;
+}
+
+.subscribe-section button:hover,
+.newsletter-section button:hover {
+	background-color: #da1c0b;
+}
+
+.newsletter-section div img {
+	height: 100%;
+	width: 50%;
+}
+
