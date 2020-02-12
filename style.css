@@ -246,6 +246,11 @@ footer {
 	margin-bottom: 0;
 }
 
+.footer-right ul {
+	margin-bottom: 0;
+	margin-top: 20px;
+	padding-left: 60px;
+}
 .footer-bottom a {
 	font-size: 14px;
 }
@@ -256,4 +261,8 @@ strong {
 
 .editions ul {
 	margin: 0;
+}
+
+.footer-right a {
+	font-size: 25px;
 }
