@@ -88,7 +88,20 @@ body {
 .label {
 	bottom: 0;
 	color: #f72210;
-	padding: 5px 4px; 
+	padding: 5px 4px;
+	cursor: pointer; 
+}
+
+.featured-bottom .card-title a:hover {
+	text-decoration: underline #f72210;
+}
+
+.top-story-bottom h4 a:hover {
+	text-decoration: underline #f72210;
+}
+
+.more-article h6 a:hover {
+	text-decoration: underline #f72210;
 }
 
 .opinion-text p  {
