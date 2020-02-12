@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
-  <body class="bg-white mr-4 ml-4">
+  <body class="bg-white mr-4 ml-4 border-light">
     <!-- Header -->
     <header class="container-fluid p-0">
       <!-- Nav top -->
@@ -34,18 +34,18 @@
       <!-- Nav bottom -->
       <nav class="nav-bottom row container-fluid bg-light mt-2 p-0 m-0">
         <div>
-          <ul class="ml-1">
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">U.S</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">World</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Business</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Tech & Science</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Culture</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Newsgeek</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Sports</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Health</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">The Debate</a></li>
-            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Vantage</a></li>
-            <li class="d-inline"><a class="text-decoration-none text-dark font-weight-bolder pr-1" href="#">Weather</a></li>
+          <ul class="list-inline ml-1">
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">U.S</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">World</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Business</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Tech & Science</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Culture</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Newsgeek</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Sports</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Health</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">The Debate</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Vantage</a></li>
+            <li class="d-inline"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Weather</a></li>
           </ul>          
         </div>
         <form action="#">
@@ -54,14 +54,14 @@
         </form>
       </nav>
     </header>
-    <main>
-      <div class="main-section">
+    <main class="container-fluid p-0">
+      <div class="main-section row container-fluid">
         <!-- Top story section -->
-        <section>
+        <section class="col-sm-6">
           <div class="top-story">
-            <h5>TOP STORY</h5>
+            <h6 class="text-black-50 font-weight-bold pb-1">TOP STORY</h6>
             <div class="top-story-top">
-              <img src="./Images/topstory.webp" alt="">
+              <img class="img-fluid" src="./Images/topstory.webp" alt="">
               <p>POLITICS</p>
             </div>
             <div class="top-story-bottom">
@@ -73,7 +73,7 @@
             <h5>CULTURE & TRAVEL</h5>
             <div class="culture-travel">
               <div class="culture-articles">
-                <img src="./Images/culture&travel.webp" alt="">
+                <img class="img-fluid" src="./Images/culture&travel.webp" alt="">
                 <h4>Comic Book Movies Now Earn Oscars Respect—Their Journey to Relevancy</h4>
                 <p>Comic book movies have not had much of a presence at award shows. Over time, only a handful of films have gotten a nomination, but "Joker" has gotten a record number of nominations.</p>
                 <a href="#"><span>Oscars</span></a>
@@ -84,7 +84,7 @@
             <h5>MORE STORIES</h5>
             <div class="more-stories">
               <div class="more-article">
-                <img src="./Images/morestories.webp" alt="">
+                <img class="img-fluid" src="./Images/morestories.webp" alt="">
                 <h6><a href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
                 <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
               </div>
@@ -92,49 +92,146 @@
           </div>
         </section>
         <!-- Featured stories -->
-        <aside class="featured-container">
-          <h5>FEATURED STORIES</h5>
+        <aside class="featured-container col-lg-3 col-sm-3 order-first pl-0">
+          <h6 class="text-black-50 font-weight-bold pb-1">FEATURED STORIES</h6>
           <div class="featured-stories">
             <div class="features-top">
-              <img src="./Images/featuredstories.webp" alt="">
-              <p>WORLD</p>
+              <img class="img-fluid" src="./Images/featuredstories.webp" alt="">
+              <div class="bottom-left position-absolute text-center font-weight-bold bg-light">WORLD</div>
             </div>
             <div class="featured-bottom">
-              <h4>Growth Can Be Green. Here's How</h4>
+              <h4 class="">Growth Can Be Green. Here's How</h4>
               <p>The apparently ironclad trade-off between human prosperity and the state of nature has been eased.</p>
             </div>
           </div>
         </aside>        
         <!-- opinion section-->
-        <aside>
+        <aside class="col-sm-3 order-last">
           <div class="opinion-container">
-            <h5><a href="#">OPINION</a></h5>
-            <div class="opinion">
-              <div class="opinion-article">
-                <div>
-                  <a href="#"><img src="./Images/opinion.webp" alt=""></a>
-                  <p><a href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
-                  <span>BY BENNY JOHNSON</span>
-                </div>
+            <h6 class="pb-1 font-weight-bold"><a class="text-decoration-none text-black-50" href="#">OPINION</a></h6>
+            <div class="opinion row border-bottom">
+              <div class="opinion-pic col-sm-4 p-0">
+                <a href="#"><img class="rounded-circle img-fluid"src="./Images/opinion.webp" alt=""></a>
               </div>
+              <div class="opinion-text col-sm-8 p-0">                  
+                <p><a class="text-decoration-none text-dark" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class="font-weight-bold text-black-50 ">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row border-bottom">
+              <div class="opinion-pic col-sm-4 p-0">
+                <a href="#"><img class="rounded-circle img-fluid"src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-sm-8 p-0">                  
+                <p><a class="text-decoration-none text-dark" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class="font-weight-bold text-black-50 ">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row border-bottom">
+              <div class="opinion-pic col-sm-4 p-0">
+                <a href="#"><img class="rounded-circle img-fluid"src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-sm-8 p-0">                  
+                <p><a class="text-decoration-none text-dark" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class="font-weight-bold text-black-50 ">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row border-bottom">
+              <div class="opinion-pic col-sm-4 p-0">
+                <a href="#"><img class="rounded-circle img-fluid"src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-sm-8 p-0">                  
+                <p><a class="text-decoration-none text-dark" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class="font-weight-bold text-black-50 ">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row border-bottom">
+              <div class="opinion-pic col-sm-4 p-0">
+                <a href="#"><img class="rounded-circle img-fluid"src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-sm-8 p-0">                  
+                <p><a class="text-decoration-none text-dark" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class="font-weight-bold text-black-50 ">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row border-bottom">
+              <div class="opinion-pic col-sm-4 p-0">
+                <a href="#"><img class="rounded-circle img-fluid"src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-sm-8 p-0">                  
+                <p><a class="text-decoration-none text-dark" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class="font-weight-bold text-black-50 ">BY BENNY JOHNSON</span>
+              </div>              
             </div>
           </div>
           <div class="latest-news-container">
-            <h5><a href="#">LATEST NEWS</a></h5>
-            <div class="latest-news">
-              <div class="latest-article">
-                <a href="#"><img src="./Images/latestnews.webp" alt=""></a>
-                <p><a href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+            <h6 class="text-black-50 font-weight-bold pb-1 mt-3"><a class="text-decoration-none text-black-50" href="#">LATEST NEWS</a></h6>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row border-bottom mb-3">
+              <div class="latest-article col-sm-5">
+                <a href="#"><img class="img-fluid" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-sm-7">
+                <p><a class="text-decoration-none text-dark" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
               </div>
             </div>
           </div>
-          <div class="signup">
-            <div>
-              <img src="" alt="">
-              <p>SIGN UP FOR OUR NEWSLETTER</p>
+          <div class="signup border pl-4 pb-2 pt-4">
+            <div class="d-flex">
+              <img class="img-fluid w-25 h-25" src="./Images/smalllogo.png" alt="">
+              <p class="font-weight-bolder text-dark-50">SIGN UP FOR OUR NEWSLETTER</p>
             </div>
-            <button>SIGN UP <i class="fas fa-chevron-right"></i></button>
-            <p><a href="#">Update your preferences</a></p>
+            <div>
+              <button class="btn btn-secondary rounded-0 font-weight-bolder">SIGN UP <i class="fas fa-chevron-right"></i></button>
+              <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Update your preferences</a></p>
+          </div>
           </div>
         </aside>
       </div>
