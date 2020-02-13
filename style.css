@@ -336,4 +336,59 @@ strong {
 	font-size: 25px;
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 991px) {
+	body {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	header .nav-bottom {
+		display: none;
+	}
+
+	header div .nav-top .left-top {
+		display: none !important;
+	}
+
+	.fa-bars {
+		display: block;
+		color: gray;
+		font-size: 30px;
+	}
+
+	header .nav-top {
+		height: 55px;
+	}
+
+	header .right-top {
+		width: 50%;
+	}
+
+	header .middle-top {
+		width: 50%;
+		justify-content: start !important;
+	}
+
+	header .middle-top svg {
+		left: 0;
+		width: 150px;
+    	height: 40px;
+    	margin: 0;
+	}
+
+	aside .signup {
+		margin: 0 auto !important;
+		width: 50%;
+		background-color: lightgray;
+	}
+
+	.magazine-aside .magazine-pic {
+		margin-top: 78px;
+	}
+
+	.magazine-pic img {
+		width: 85%;
+		/* height: 79%; */
+	}
+}
+
