@@ -50,6 +50,30 @@ table {
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+main {
+	padding-top: 20px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 998;
+	background-color: white;
+	
+} 
+
+#scroll {
+	height: 380px;
+	overflow-y: auto;
+	
+}
+#scroll::-webkit-scrollbar {
+	background-color: transparent;
+}
+
+
+
 .nav-top {
 	height: 95px;
 }
@@ -113,6 +137,15 @@ body {
 	text-decoration: underline #f72210;
 }
 
+.culture-articles p {
+	font-size: 14px;
+}
+
+.culture-travel-container {
+	background-color: lightgray;
+	padding: 5px 0px;
+}
+
 .more-article h6 a:hover {
 	text-decoration: underline #f72210;
 }
@@ -129,6 +162,7 @@ body {
 .opinion-text span {
 	font-size: 11px;
 }
+
 
 .latest-news div p a:hover {
 	color: #f72210 !important;
@@ -301,3 +335,5 @@ strong {
 .footer-right a {
 	font-size: 25px;
 }
+
+@media only screen and (max-width: 992px)
