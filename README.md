@@ -1,13 +1,19 @@
-# Project Name
+# Using Bootstrap
 
+![screenshot](/images/screenshot.png)
+
+Clone of [The Newsweek](https://www.newsweek.com/) website.
 
 # What it does
-
+Clone of the website https://www.newsweek.com/ using bootstrap
 
 # Built With
+HTML
+CSS
+Bootstrap
 
 # Live Demo
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/javitocor/Using-Bootstrap/feature/index.html)
 
 # Getting Started
 To get a local copy up and running follow these simple example steps.
