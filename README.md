@@ -1,6 +1,6 @@
 # Using Bootstrap
 
-![screenshot](/images/screenshot.png)
+![screenshot](/Images/screenshot.png)
 
 Clone of [The Newsweek](https://www.newsweek.com/) website.
 
