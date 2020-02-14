@@ -425,11 +425,64 @@ strong {
 	}
 	
 	.magazine-bottom .row,
-	
+	.subscribe-section,
+	.slideshows,
 	.magazine-top,
-	.magazine-top .col-9,
-	.magazine-top .col-9 .row {
+	.us-container,
+	.magazine-top .col-9 .row,
+	.magazine-top .col-12 .row{
 		display: flex;
 		flex-flow: column wrap;
 	}
+
+	.magazine-pic img {
+		width: 100%;
+	}
+
+	.subscribe-section .col {
+		text-align: center;
+	}
+
+	.subscribe-section .col img {
+		width: 40%;
+		height: 67%;
+	}
+	.newsletter-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.newsletter-pic {
+		width: 100%;
+	}
+	.newsletter-section .col-lg-6 {
+		text-align: center;
+	}
+
+	.newsletter {
+		height: 150px;
+		margin-bottom: 100px;
+	}
+
+	.footer-top,
+	.footer-left {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-left p {
+		margin: 0;	
+	}
+
+	.footer-right ul {
+		margin: 0;
+		padding: 0;
+	}
+	.latest-news-container {
+		width: 100%;
+	}
+	.latest-article {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+	}
+
 }
