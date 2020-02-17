@@ -426,11 +426,28 @@ strong {
 .editions ul {
   margin: 0;
 }
-
+@media only screen and (max-width: 550px){
+  .right-top {
+    font-size:14px;   
+  }
+  
+  .fa-chevron-right {display: none;}
+  .fa-bars {
+    font-size: 20px;
+  }
+  .more-article img {
+    width: 200px;
+    height: 150px;
+  }
+  
+}
 @media only screen and (max-width: 991px) {
   body {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  header {
+    width: 100%;
   }
 
   header .nav-bottom {
@@ -508,13 +525,21 @@ strong {
   .opinion-news {
     order: 3;
   }
-
+  section .more-stories-container {
+    order: 2;
+  }
+  section .culture-travel-container{
+    order: 3;
+  }
+  section .top-story {
+    order: 1;
+  }
   .magazine-bottom .row,
   .subscribe-section,
   .slideshows,
   .magazine-top,
   .us-container,
-  .magazine-top .col-9 .row,
+  .magazine-top .col-lg-9 .row,
   .magazine-top .col-12 .row {
     display: flex;
     flex-flow: column wrap;
