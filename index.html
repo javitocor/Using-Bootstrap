@@ -3,11 +3,825 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/d4de0f4540.js" crossorigin="anonymous"></script>
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
-  <body>
-    
+  <body class="bg-white mr-lg-3 ml-lg-3 border-light">
+    <!-- Header -->
+    <header class="container-fluid p-0">
+      <!-- Nav top -->
+      <div class="container-fluid p-0">
+        <nav class="nav-top row container-fluid p-0 m-0">
+          <div class="left-top col-lg-3 d-flex align-items-end text-white pb-3">
+            <span><time datetime="2020-02-10">Mon, Feb 10, 2020</time></span>
+          </div>
+          <div class="middle-top col-lg-6 col-5 d-flex align-items-center justify-content-center">
+            <a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+              <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+              </g></svg></a>
+          </div>
+          <div class="right-top col-lg-3 col-7 d-flex align-items-end text-white pb-3 justify-content-end">
+            <a class="text-decoration-none mr-2 font-weight-bolder text-white" href="#">SIGN IN</a>
+            <a class="subs-button mr-2 font-weight-bold text-decoration-none bg-white" href="#">SUBSCRIBE   <i class="fas fa-chevron-right"></i></a>
+            <a class="text-decoration-none" href="#"><i class="fas fa-bars"></i></a>
+          </div>
+        </nav>
+      </div>
+      <!-- Nav bottom -->
+      <nav class="nav-bottom row container bg-light mr-4 ml-4 mt-2 p-0 m-0">
+        <div>
+          <ul class="list-inline ml-1">
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">U.S</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">World</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Business</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Tech & Science</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Culture</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Newsgeek</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Sports</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Health</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">The Debate</a></li>
+            <li class="d-inline border-right"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Vantage</a></li>
+            <li class="d-inline"><a class="text-decoration-none text-dark font-weight-bolder pr-2 pl-2" href="#">Weather</a></li>
+          </ul>          
+        </div>
+        <form action="#">
+          <input type="text" id="search" class="border-0 outline-0 pl-1" size="3" placeholder="Search">
+          <label for="search"><i class="fas fa-search"></i></label>
+        </form>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="main-section row container-fluid">
+        <!-- Featured stories -->
+        <aside class="featured-container col-lg-3 col-md-5 col-12 col-sm-12 pl-0">
+          <h6 class="text-black-50 font-weight-bold pb-1">FEATURED STORIES</h6>
+          <div class="featured-stories mb-2">
+            <div class="features-top card">
+              <img class="card-img-top" src="./Images/featuredstories.webp" alt="">
+              <div class="label position-absolute text-center bg-white font-weight-bold">WORLD</div>
+            </div>
+            <div class="featured-bottom">
+              <h4 class="card-title"><a class="text-dark font-weight-bolder" href="#">Growth Can Be Green. Here's How</a></h4>
+              <p class="card-text">The apparently ironclad trade-off between human prosperity and the state of nature has been eased.</p>
+            </div>
+          </div>
+          <div class="featured-stories mb-2">
+            <div class="features-top card">
+              <img class="card-img-top" src="./Images/featuredstories.webp" alt="">
+              <div class="label position-absolute text-center bg-white font-weight-bold">WORLD</div>
+            </div>
+            <div class="featured-bottom">
+              <h4 class="card-title"><a class="text-dark font-weight-bolder" href="#">Growth Can Be Green. Here's How</a></h4>
+              <p class="card-text">The apparently ironclad trade-off between human prosperity and the state of nature has been eased.</p>
+            </div>
+          </div>
+          <div class="featured-stories mb-2">
+            <div class="features-top card">
+              <img class="card-img-top" src="./Images/featuredstories.webp" alt="">
+              <div class="label position-absolute text-center bg-white font-weight-bold">WORLD</div>
+            </div>
+            <div class="featured-bottom">
+              <h4 class="card-title"><a class="text-dark font-weight-bolder" href="#">Growth Can Be Green. Here's How</a></h4>
+              <p class="card-text">The apparently ironclad trade-off between human prosperity and the state of nature has been eased.</p>
+            </div>
+          </div>
+          <div class="featured-stories mb-2">
+            <div class="features-top card">
+              <img class="card-img-top" src="./Images/featuredstories.webp" alt="">
+              <div class="label position-absolute text-center bg-white font-weight-bold">WORLD</div>
+            </div>
+            <div class="featured-bottom">
+              <h4 class="card-title"><a class="text-dark font-weight-bolder" href="#">Growth Can Be Green. Here's How</a></h4>
+              <p class="card-text">The apparently ironclad trade-off between human prosperity and the state of nature has been eased.</p>
+            </div>
+          </div>
+        </aside>  
+        <!-- Top story section -->
+        <section class="col-lg-6 col-md-7 col-12 col-sm-12">
+          <div class="top-story">
+            <h6 class="text-black-50 font-weight-bold pb-1">TOP STORY</h6>
+            <div class="top-story-top card">
+              <img class="card-img-top" src="./Images/topstory.webp" alt="">
+              <div class="label position-absolute text-center bg-white font-weight-bold">POLITICS</div>
+            </div>
+            <div class="top-story-bottom">
+              <h4><a class="text-dark font-weight-bolder" href="#">Pete Buttigieg Closes Gap on Bernie Sanders in New Hampshire: Poll</a></h4>
+              <p>The final 7 News/Emerson College poll shows Sanders ahead with 30 percent support and Buttigieg on 23 percent.</p>
+            </div>
+          </div>
+          <div class="culture-travel-container container-fluid pr-0 pl-0">
+            <h6 class="text-black-50 font-weight-bold pb-1 pl-1">CULTURE & TRAVEL</h6>
+            <div class="culture-travel row mb-3">
+              <div class="culture-articles col mb-3">
+                <img class="img-fluid" src="./Images/culture&travel.webp" alt="">
+                <h5><a class="text-decoration-none text-dark font-weight-bolder" href="#">Comic Book Movies Now Earn Oscars Respect—Their Journey to Relevancy</a></h5>
+                <p>Comic book movies have not had much of a presence at award shows. Over time, only a handful of films have gotten a nomination, but "Joker" has gotten a record number of nominations.</p>
+                <a href="#"><span class="card-link bg-info pr-1 pl-1 text-decoration-none text-dark">Oscars</span></a>
+              </div>
+              <div class="culture-articles col mb-3">
+                <img class="img-fluid" src="./Images/culture&travel.webp" alt="">
+                <h5><a class="text-decoration-none text-dark font-weight-bolder" href="#">Comic Book Movies Now Earn Oscars Respect—Their Journey to Relevancy</a></h5>
+                <p>Comic book movies have not had much of a presence at award shows. Over time, only a handful of films have gotten a nomination, but "Joker" has gotten a record number of nominations.</p>
+                <a href="#"><span class="card-link bg-info pr-1 pl-1 text-decoration-none text-dark">Oscars</span></a>
+              </div>
+              <div class="w-100"></div>
+              <div class="culture-articles col mb-3">
+                <img class="img-fluid" src="./Images/culture&travel.webp" alt="">
+                <h5><a class="text-decoration-none text-dark font-weight-bolder" href="#">Comic Book Movies Now Earn Oscars Respect—Their Journey to Relevancy</a></h5>
+                <p class="">Comic book movies have not had much of a presence at award shows. Over time, only a handful of films have gotten a nomination, but "Joker" has gotten a record number of nominations.</p>
+                <a  href="#"><span class="card-link bg-info pr-1 pl-1 text-decoration-none text-dark">Oscars</span></a>
+              </div>
+              <div class="culture-articles col mb-3">
+                <img class="img-fluid" src="./Images/culture&travel.webp" alt="">
+                <h5><a class="text-decoration-none text-dark font-weight-bolder" href="#">Comic Book Movies Now Earn Oscars Respect—Their Journey to Relevancy</a></h5>
+                <p>Comic book movies have not had much of a presence at award shows. Over time, only a handful of films have gotten a nomination, but "Joker" has gotten a record number of nominations.</p>
+                <a href="#"><span class="card-link bg-info pr-1 pl-1 text-decoration-none text-dark">Oscars</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="more-stories-container mt-2"  id="scroll">
+            <h6 class="text-black-50 font-weight-bold pb-1 border-bottom">MORE STORIES</h6>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div class="">
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+            <div class="more-stories ">
+              <div class="more-article d-flex border-bottom mt-3">
+                <img class="img-fluid mr-3 mb-3" src="./Images/morestories.webp" alt="">
+                <div>
+                  <h6><a class="text-dark font-weight-bolder" href="#">Obama Left Trump 'a Horrible Legacy,' Russia's Foreign Minister Says</a></h6>
+                  <p>Sergei Lavrov accused President Barack Obama of putting personal issues before those of the state and undermining ties between Washington and Moscow.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>              
+        <!-- opinion section-->
+        <aside class="opinion-news col-lg-3 col-12">
+          <div class="opinion-container container-fluid">
+            <h6 class="pb-1 font-weight-bold"><a class="text-decoration-none text-black-50" href="#">OPINION</a></h6>
+            <div class="opinion row d-flex justify-content-start border-bottom pb-2 mb-3">
+              <div class="opinion-pic col-2 col-md-2 col-lg-3 p-0  pr-xs-2">
+                <a href="#"><img class="rounded-circle card-img-top" src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-10 col-md-10 col-lg-9 p-0">                  
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class=" font-weight-bolder text-black-50">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row d-flex justify-content-start border-bottom pb-2 mb-3">
+              <div class="opinion-pic col-2 col-md-2 col-lg-3 p-0  pr-xs-2">
+                <a href="#"><img class="rounded-circle card-img-top" src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-10 col-md-10 col-lg-9 p-0">                  
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class=" font-weight-bolder text-black-50">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row d-flex justify-content-start border-bottom pb-2 mb-3">
+              <div class="opinion-pic col-2 col-md-2 col-lg-3 p-0  pr-xs-2">
+                <a href="#"><img class="rounded-circle card-img-top" src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-10 col-md-10 col-lg-9 p-0">                  
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class=" font-weight-bolder text-black-50">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row d-flex justify-content-start border-bottom pb-2 mb-3">
+              <div class="opinion-pic col-2 col-md-2 col-lg-3 p-0  pr-xs-2">
+                <a href="#"><img class="rounded-circle card-img-top" src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-10 col-md-10 col-lg-9 p-0">                  
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class=" font-weight-bolder text-black-50">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row d-flex justify-content-start border-bottom pb-2 mb-3">
+              <div class="opinion-pic col-2 col-md-2 col-lg-3 p-0  pr-xs-2">
+                <a href="#"><img class="rounded-circle card-img-top" src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-10 col-md-10 col-lg-9 p-0">                  
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class=" font-weight-bolder text-black-50">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+            <div class="opinion row d-flex justify-content-start border-bottom pb-2 mb-3">
+              <div class="opinion-pic col-2 col-md-2 col-lg-3 p-0  pr-xs-2">
+                <a href="#"><img class="rounded-circle card-img-top" src="./Images/opinion.webp" alt=""></a>
+              </div>
+              <div class="opinion-text col-10 col-md-10 col-lg-9 p-0">                  
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Say Bye to Media Coverage If Pelosi Succeeds in Censoring Our Video</a></p>
+                <span class=" font-weight-bolder text-black-50">BY BENNY JOHNSON</span>
+              </div>              
+            </div>
+          </div>
+          <div class="latest-news-container">
+            <h6 class="text-black-50 font-weight-bold pb-1 mt-3"><a class="text-decoration-none text-black-50" href="#">LATEST NEWS</a></h6>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+            <div class="latest-news row justify-content-start border-bottom mb-3 ">
+              <div class="latest-article justify-content-start col-5 ml-0 pl-0 pr-0 mr-0">
+                <a href="#"><img class="card-img-top" src="./Images/latestnews.webp" alt=""></a>
+              </div>
+              <div class="col-7 justify-content-start mr-0 pr-0">
+                <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Family Offers to Fund Legal Expenses of Hit-and-Run Driver Who Injured Son</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="signup border pl-4 pb-2 pt-4">
+            <div class="d-flex">
+              <img class="img-fluid w-25 h-25 mb-1" src="./Images/smalllogo.png" alt="">
+              <p class="font-weight-bolder text-dark-50">SIGN UP FOR OUR NEWSLETTER</p>
+            </div>
+            <div>
+              <button class="btn btn-secondary rounded-0 font-weight-bolder mb-2">SIGN UP <i class="fas fa-chevron-right"></i></button>
+              <p><a class="text-decoration-none text-dark font-weight-bolder" href="#">Update your preferences</a></p>
+          </div>
+          </div>
+        </aside>
+      </div>
+      <!-- in the magazine section -->
+      <div class="in-the-magazine mb-2">
+        <div class="magazine-top row mt-4">
+          <div class="magazine-aside col-lg-3 col-sm-12 col-md-3">
+            <div class="magazine-pic card border-0">
+              <a href="#"><img class="card-img-top" src="./Images/february-14-2020-cover.webp" alt=""></a>
+              <div><a class="label text-decoration-none position-absolute text-center bg-white font-weight-bold" href="#">FEBRUARY 14 ISSUE</a></div>
+            </div>
+            <p class="text-center font-weight-bolder "><a class="text-decoration-none text-dark" href="#">SEE ALL FEATURES <i class="fas fa-chevron-right"></i></a></p>
+          </div>
+          <div class="col-lg-9 col-sm-12 col-md-9">
+            <div class="text font-weight-bolder text-dark d-flex justify-content-center mb-3"><span class="logo"></span> IN THE MAGAZINE</div>
+            <div class="row border-top pt-2">
+              <div class="magazine-article col card border-0 ">
+                <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+                <div class="card-body pl-0">
+                  <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                  <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+                </div>
+              </div>
+              <div class="magazine-article col card border-0">
+                <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+                <div class="card-body pl-0">
+                  <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                  <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+                </div>
+              </div>
+              <div class="magazine-article col card border-0">
+                <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+                <div class="card-body pl-0">
+                  <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                  <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="magazine-bottom">
+          <div class="row">
+            <div class="magazine-article col card border-0">
+              <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+              <div class="card-body pl-0">
+                <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+              </div>
+            </div>
+            <div class="magazine-article col card border-0">
+              <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+              <div class="card-body pl-0">
+                <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+              </div>
+            </div>
+            <div class="magazine-article col card border-0">
+              <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+              <div class="card-body pl-0">
+                <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+              </div>
+            </div>
+            <div class="magazine-article col card border-0">
+              <a href="#"><img class="card-img-top" src="./Images/magazinearticle.webp" alt=""></a>
+              <div class="card-body pl-0">
+                <span class="card-title text-center font-weight-bolder">COVER </span><span class="font-weight-bolder"><a href="#"> WORLD</a></span>
+                <h5 class="card-text"><a class=" font-weight-bold text-dark" href="#">Coronavirus Outbreak Is A Wake-Up Call Showing How Unprepared We Are</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Editors pick section -->
+      <div class="editors-pick-container mb-2">
+        <div class="text d-flex justify-content-center text-dark font-weight-bolder mb-3 mt-3"><span></span> EDITOR'S PICK</div>
+        <div class="editors-pick row">
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a class="text-decoration-none" href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+          <div class="editors-card col-lg-3 col-md-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./Images/editorpick.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">U.S</a></div>
+            </div>
+            <div class="card-body pl-0">
+              <h4 class="card-title"><a class="text-dark" href="#">Bernie Sanders Dismisses Concerns That Democrats Tried to Hurt Him in Iowa</a></h4>
+              <p class="card-text">"There are a lot of people in the Democratic establishment who are not–to say the least–enthusiastic about Bernie Sanders," the presidential candidate said.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slideshows section -->
+      <div class="slideshows-container">
+        <div class="d-flex justify-content-center mb-3 mt-3"><span></span> <a class="text text-decoration-none text-dark font-weight-bolder" href="#">FEATURED SLIDESHOWS</a></div>
+        <div class="slideshows row">
+          <div class="slideshows-cards col mb-4">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top" src="./Images/slideshows.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">11</a></div>
+            </div>
+            <h4><a class="text-dark font-weight-bold" href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
+          </div>
+          <div class="slideshows-cards col mb-4">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top" src="./Images/slideshows.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">11</a></div>
+            </div>
+            <h4><a class="text-dark font-weight-bold" href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
+          </div>
+          <div class="slideshows-cards col mb-4">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top" src="./Images/slideshows.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">11</a></div>
+            </div>
+            <h4><a class="text-dark font-weight-bold" href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
+          </div>
+          <div class="w-100"></div>
+          <div class="slideshows-cards col mb-4">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top" src="./Images/slideshows.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">11</a></div>
+            </div>
+            <h4><a class="text-dark font-weight-bold" href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
+          </div>
+          <div class="slideshows-cards col mb-4">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top" src="./Images/slideshows.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">11</a></div>
+            </div>
+            <h4><a class="text-dark font-weight-bold" href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
+          </div>
+          <div class="slideshows-cards col mb-4">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top" src="./Images/slideshows.webp" alt=""></a>
+              <div><a class="label position-absolute text-center bg-white font-weight-bold" href="#">11</a></div>
+            </div>
+            <h4><a class="text-dark font-weight-bold" href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
+          </div>
+        </div>
+      </div>
+      <!-- US section -->
+      <div class="us-section mb-4 pb-3 border-bottom">
+        <h3><a href="#">U.S.</a></h3>
+        <div class="us-container row">
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-column col">
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="us-section mb-4 pb-3 border-bottom">
+        <h3><a href="#">U.S.</a></h3>
+        <div class="us-container row">
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-column col">
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="us-section mb-4 pb-3 border-bottom">
+        <h3><a href="#">U.S.</a></h3>
+        <div class="us-container row">
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-column col">
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="us-section mb-4 pb-3 border-bottom">
+        <h3><a href="#">U.S.</a></h3>
+        <div class="us-container row">
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-column col">
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="us-section mb-4 pb-3 border-bottom">
+        <h3><a href="#">U.S.</a></h3>
+        <div class="us-container row">
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-column col">
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="us-section mb-4 pb-3 border-bottom">
+        <h3><a href="#">U.S.</a></h3>
+        <div class="us-container row">
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-cards col">
+            <a href="#"><img class="mb-2" src="./Images/us.webp" alt=""></a>
+            <h4><a class="text-dark font-weight-bold" href="#">Catholic Priest Defends Barring Pro-Abortion Lawmakers From Communion</a></h4>
+          </div>
+          <div class="us-column col">
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex border-bottom mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+            <div class="us-article d-flex mb-2 pb-2">
+              <a href="#"><img class="pr-2" src="./Images/usside.webp" alt=""></a>
+              <h5><a class="text-decoration-none font-weight-bold text-dark" href="#">'SNL' Sketch Echoes Drag Queen Story Hour Controversies</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- subscribe & newsletter section-->
+      <div class="container-fluid row mb-5">
+        <div class="subscribe col-lg-8">
+          <h5 class="">SUBSCRIBE</h5>
+          <div class="subscribe-section row">
+            <div class="col">
+              <img class="position-absolute second-pic" src="./Images/susbscribe.jpg" alt="">
+              <img src="./Images/susbscribe2.jpg" alt="">
+            </div>
+            <div class="col">
+              <h3 class="text-dark font-weight-bolder">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+              <p class="text-secondary">All Access + Weekly Delivery.
+                Choose A Membership That's Perfect for You!</p>
+              <button class="border-0 font-weight-bolder  btn btn-secondary rounded-0">SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter col-lg-4 col-12">
+          <h5 class="">NEWSLETTER</h5>
+          <div class="newsletter-section border d-flex">
+            <div class="newsletter-pic col-12 col-lg-6 col-sm-12 col-md-12"></div>
+            <div class="col-lg-6">
+              <h3 class="text-dark font-weight-bolder">The Starting 5</h3>
+              <p class="text-secondary">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+              <button class="border-0 font-weight-bolder btn btn-secondary rounded-0">SIGN UP <i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <div class="footer-top row justify-content-between border-bottom mb-1">
+        <div class="footer-left col-lg-8 col-md-7 col-sm-12 d-flex">
+          <a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
+            <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+            </g></svg></a>
+          <p class="">© 2020 NEWSWEEK</p>
+        </div>
+        <div class="footer-right col-lg-4 col-md-5 col-sm-12 justify-content-end">
+          <ul class="d-md-flex justify-content-md-end">
+            <li class="d-inline pr-2 mr-2"><a href="#"><i class="fab fa-facebook-square text-decoration-none text-dark"></i></a></li>
+            <li class="d-inline pr-2 mr-2"><a href="#"><i class="fab fa-twitter text-decoration-none text-dark"></i></a></li>
+            <li class="d-inline pr-2 mr-2"><a href="#"><i class="fab fa-instagram-square text-decoration-none text-dark"></i></a></li>
+            <li class="d-inline pr-2 mr-2"><a href="#"><i class="fab fa-tumblr text-decoration-none text-dark"></i></a></li>
+            <li class="d-inline pr-2 mr-2"><a href="#"><i class="fab fa-linkedin-in text-decoration-none text-dark"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="editions">
+          <ul>
+            <li class="d-inline border-right pr-2"><strong>Editions:</strong></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">U.S. Edition</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">日本</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Pakistan</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Polska</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">România</a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">About Us</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Corrections</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Contact Us</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Editorial Guidelines</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Advertise</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Copyright</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Terms & Conditions</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Privacy Policy</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Cookie Policy</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Terms of Sale</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Archive</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Announcements</a></li>
+            <li class="d-inline border-right pr-2 mr-2"><a class="text-decoration-none text-dark" href="#">Consent preferences</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
